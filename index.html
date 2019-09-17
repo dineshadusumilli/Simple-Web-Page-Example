@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Center IT Web Development Professionals</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>
+          Center IT Web Development Professionals
+      </h1>
+    </header>
+
+    <main>
+      <marquee><img src="fh-logo.png" /></marquee>
+      <blink>Don't blink!</blink>
+      <section class="faces">
+          <marquee>The worst dev: <img src="scott.jpg" /></marquee>
+          <marquee>The new guy: <img src="dinesh.jpg" /></marquee>
+          The old timer (doesn't look like this anymore): <img src="josh.jpg" />
+      </section>
+    </main>
+
+    <footer>
+      <p id="date">
+      </p>
+    </footer>
+  <script type="text/javascript">
+    function insertDate() {
+      var today = new Date();
+      document.getElementById('date').innerHTML = today;
+    }
+   function autorun() {
+      setInterval(insertDate, 1000);
+   }
+   if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
+   else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
+   else window.onload = autorun;
+  </script>
+  </body>
+</html>
+
